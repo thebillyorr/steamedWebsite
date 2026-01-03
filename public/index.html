@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steamed - Master Chinese</title>
+    <meta name="description" content="Steamed is a Chinese language learning app featuring topic decks and an interactive reading library.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="background-gradient"></div>
+
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Steamed Logo">
+                Steamed
+            </a>
+        </div>
+    </header>
+
+    <main class="hero">
+        <div class="container">
+            <div class="hero-content">
+                
+                <div class="hero-image-container">
+                    <img src="images/1.png" alt="Steamed App Screenshot" class="app-screenshot">
+                </div>
+
+                <div class="hero-text">
+                    <h1>Read Chinese with Steamed</h1>
+                    <p>
+                        Stop memorizing lists. Start reading. 
+                        Steamed turns real Chinese articles into personalized lessons. 
+                        Tap words you don't know, then master them with quizzes built just for you.
+                    </p>
+                    <a href="#" class="app-store-button">
+                        <img src="images/appstore.svg" alt="Download on the App Store">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Section 1: The Workflow (3 Columns) -->
+    <section class="feature-section">
+        <div class="container">
+            <div class="feature-content center">
+                <div class="feature-text" style="max-width: 800px; margin: 0 auto;">
+                    <h2>How Steamed Works</h2>
+                    <p>A simple, effective loop to build reading fluency.</p>
+                </div>
+            </div>
+            
+            <div class="steps-grid">
+                <!-- Step 1 -->
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-image">
+                        <img src="images/2.png" alt="Read Articles">
+                    </div>
+                    <h3>Read</h3>
+                    <p>Choose from a vast library of reading passages on topics you love. News, culture, tech, and more.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-image">
+                        <img src="images/3.png" alt="Tap to Translate">
+                    </div>
+                    <h3>Practise</h3>
+                    <p>Don't know a word? Practise sessions reinforce your learning with targeted exercises.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-image">
+                        <img src="images/4.png" alt="Review Flashcards">
+                    </div>
+                    <h3>Master</h3>
+                    <p>Build a dictionary of mastered words to track your progress.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Feature Highlights (Bento Grid) -->
+    <section class="feature-section">
+        <div class="container">
+            <div class="bento-grid">
+                <div class="bento-card">
+                    <h3>Topic Decks</h3>
+                    <p>
+                        Don't just learn random words. Dive into specialized decks like "Digital Life", "Camping", or "Business" to learn vocabulary that's actually relevant to your life.
+                    </p>
+                </div>
+                <div class="bento-card">
+                    <h3>Smart Progress</h3>
+                    <p>
+                        We track every word you've learned. Watch your known vocabulary grow and see your fluency improve with detailed stats and charts.
+                    </p>
+                </div>
+                <div class="bento-card large">
+                    <h3>Audio Support</h3>
+                    <p>
+                        Listen to native audio for every article. Improve your listening skills and perfect your pronunciation by shadowing along with the text.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="contact.html">Contact Us</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+            <div class="copyright">
+                &copy; <span id="year"></span> Steamed. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

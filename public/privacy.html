@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Steamed</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .content-page {
+            padding: 60px 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        .content-page h1 {
+            color: var(--color-deep-blue);
+            margin-bottom: 30px;
+        }
+        .content-page h2 {
+            color: var(--color-deep-blue);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        .content-page p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Steamed Logo">
+                Steamed
+            </a>
+        </div>
+    </header>
+
+    <main class="content-page">
+        <div class="container">
+            <h1>Privacy Policy</h1>
+            <p>Last updated: <span id="date"></span></p>
+
+            <h2>1. Introduction</h2>
+            <p>Welcome to Steamed. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website or use our mobile application.</p>
+
+            <h2>2. Data We Collect</h2>
+            <p>We may collect, use, store and transfer different kinds of personal data about you which we have grouped together follows: Identity Data, Contact Data, Technical Data, and Usage Data.</p>
+
+            <h2>3. How We Use Your Data</h2>
+            <p>We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances: Where we need to perform the contract we are about to enter into or have entered into with you.</p>
+
+            <h2>4. Contact Us</h2>
+            <p>If you have any questions about this privacy policy or our privacy practices, please contact us at: <a href="mailto:support@steamedapp.com">support@steamedapp.com</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="contact.html">Contact Us</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+            <div class="copyright">
+                &copy; <span id="year"></span> Steamed. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('date').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>

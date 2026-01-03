@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Steamed</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .content-page {
+            padding: 60px 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        .content-page h1 {
+            color: var(--color-deep-blue);
+            margin-bottom: 30px;
+        }
+        .content-page h2 {
+            color: var(--color-deep-blue);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        .content-page p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Steamed Logo">
+                Steamed
+            </a>
+        </div>
+    </header>
+
+    <main class="content-page">
+        <div class="container">
+            <h1>Terms of Service</h1>
+            <p>Last updated: <span id="date"></span></p>
+
+            <h2>1. Agreement to Terms</h2>
+            <p>By accessing or using our application, you agree to be bound by these Terms of Service and our Privacy Policy.</p>
+
+            <h2>2. Use License</h2>
+            <p>Permission is granted to temporarily download one copy of the materials (information or software) on Steamed's website for personal, non-commercial transitory viewing only.</p>
+
+            <h2>3. Disclaimer</h2>
+            <p>The materials on Steamed's website are provided on an 'as is' basis. Steamed makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p>
+
+            <h2>4. Governing Law</h2>
+            <p>These terms and conditions are governed by and construed in accordance with the laws and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="contact.html">Contact Us</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+            <div class="copyright">
+                &copy; <span id="year"></span> Steamed. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('date').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>

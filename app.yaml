@@ -1,0 +1,13 @@
+runtime: nodejs18
+service: default
+
+handlers:
+  - url: /css
+    static_dir: public/css
+
+  - url: /images
+    static_dir: public/images
+
+  - url: /.*
+    static_files: public/index.html
+    upload: public/index.html
