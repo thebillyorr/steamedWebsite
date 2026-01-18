@@ -28,6 +28,10 @@ handlers:
     static_files: public/terms.html
     upload: public/terms.html
 
+  - url: /roadmap
+    static_files: public/roadmap.html
+    upload: public/roadmap.html
+
   - url: /.*
     static_files: public/index.html
     upload: public/index.html
