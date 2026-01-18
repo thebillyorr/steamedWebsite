@@ -1,6 +1,14 @@
 runtime: nodejs20
 service: default
 
+error_handlers:
+  - file: public/404.html
+    error_code: over_quota
+  - file: public/404.html
+    error_code: dos_api_denial
+  - file: public/404.html
+    error_code: timeout
+
 handlers:
   - url: /css
     static_dir: public/css

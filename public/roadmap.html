@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap - Steamed</title>
+    <meta name="description" content="Steamed Product Roadmap. See what's coming next for the Steamed Chinese learning app.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/logo.png">
+    <link rel="apple-touch-icon" href="/images/logo.png">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Roadmap - Steamed">
+    <meta property="og:description" content="A look at what's ahead for Steamed. Check out our plans for 2026 and beyond.">
+    <meta property="og:image" content="https://steamed.app/images/logo.png">
+    <meta property="og:url" content="https://steamed.app/roadmap">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .content-page {
+            padding: 80px 0 60px;
+            color: #555;
+            line-height: 1.8;
+        }
+        .content-page h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--color-deep-blue) 0%, #2c5282 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .last-updated {
+            color: #999;
+            font-size: 0.95rem;
+            margin-bottom: 40px;
+        }
+        .intro-text {
+            font-size: 1.1rem;
+            color: #4a5568;
+            border-left: 4px solid var(--color-primary);
+            padding-left: 20px;
+            margin-bottom: 60px;
+        }
+
+        /* Timeline Styles */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #eee;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .timeline-item.left {
+            left: 0;
+            text-align: right;
+        }
+
+        .timeline-item.right {
+            left: 50%;
+            text-align: left;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: white;
+            border: 4px solid var(--color-light-blue);
+            top: 25px;
+            border-radius: 50%;
+            z-index: 1;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-item.right::after {
+            left: -10px;
+        }
+
+        .timeline-item:hover::after {
+            background-color: var(--color-light-blue);
+            transform: scale(1.2);
+        }
+
+        .timeline-content {
+            padding: 25px;
+            background-color: white;
+            position: relative;
+            border-radius: 12px;
+            border: 1px solid #eee;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .timeline-date {
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 10px;
+            display: inline-block;
+            background: rgba(153, 217, 242, 0.2);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .timeline-content h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.25rem;
+            color: var(--color-deep-blue);
+        }
+
+        .timeline-content p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item.left, .timeline-item.right {
+                left: 0;
+                text-align: left;
+            }
+            
+            .timeline-item::after {
+                left: 21px;
+            }
+            
+            .timeline-item.right::after {
+                left: 21px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-gradient"></div>
+
+    <header>
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="images/logo.png" alt="Steamed Logo">
+                Steamed
+            </a>
+        </div>
+    </header>
+
+    <main class="content-page">
+        <div class="container">
+            <h1>Product Roadmap</h1>
+            <p class="last-updated">Last updated: January 2026</p>
+            
+            <p class="intro-text">
+                Steamed is still in its early stages. We believe in building in public and sharing our vision for the future. The following is a glimpse into what we are working on to help you master Chinese reading.
+                <br><br>
+                <small><em>Note: This roadmap represents our current aspirations. Features and timelines may shift as we learn more from your feedback.</em></small>
+            </p>
+
+            <div class="timeline">
+                <!-- H1 2026 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">H1 2026</span>
+                        <h3>Connected Ecosystem</h3>
+                        <p>
+                            We are transforming Steamed from a local tool into a cloud-connected platform. The priority is introducing secure user accounts (Sign in with Apple/Google) to ensure your vocabulary lists and reading progress sync seamlessly across all your devices.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- H2 2026 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">H2 2026</span>
+                        <h3>Social Learning</h3>
+                        <p>
+                            With user accounts in place, we will introduce social features. Learning is better together, so we are adding the ability to follow friends, compare reading stats, and keep each other motivated on your language learning journey.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- H1 2027 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">H1 2027</span>
+                        <h3>Deep Immersion</h3>
+                        <p>
+                            We want to push the boundaries of <i>what</i> and <i>how</i> you read. This update will bring "Real-World" reading types — interactive menus, street signs, and app interfaces — along with native audio support to help you perfect your listening and intonation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- H2 2027 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">H2 2027</span>
+                        <h3>Sustainability & Scale</h3>
+                        <p>
+                            To support the long-term life of the app, we plan to introduce optional premium tiers for power users. Alongside this, we will continue our commitment to content with a massive expansion of our library, covering new genres and topics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="/contact">Contact Us</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
+                <a href="/roadmap">Roadmap</a>
+            </div>
+            <div class="copyright">
+                &copy; <span id="year"></span> Steamed. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
